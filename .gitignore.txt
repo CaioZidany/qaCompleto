@@ -1,0 +1,14 @@
+# Arquivos de log
+*.log
+
+# Pasta de build do Maven
+/target/
+
+# Arquivos de configuração de IDEs
+.idea/
+.vscode/
+*.iml
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
