@@ -40,7 +40,7 @@ public class ApiController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // 🆕 Endpoint 1: Buscar por nome
+    // Endpoint 1: Buscar por nome
     @GetMapping("/search")
     public ResponseEntity<?> getByName(@RequestParam String name) {
 
@@ -55,7 +55,7 @@ public class ApiController {
                 .orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).body("Item não encontrado"));
     }
 
-    // 🆕 Endpoint 2: Atualizar descrição
+    // Endpoint 2: Atualizar descrição
     @PatchMapping("/{id}/description")
     public ResponseEntity<?> updateDescription(@PathVariable Long id, @RequestBody String description) {
 
