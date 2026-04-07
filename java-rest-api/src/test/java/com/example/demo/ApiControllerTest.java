@@ -32,7 +32,7 @@ public class ApiControllerTest {
                 .content(objectMapper.writeValueAsString(item)));
     }
 
-    // ✅ GET - SUCESSO
+    // GET - SUCESSO
 
     @Test
     public void shouldReturnItemInJson() throws Exception {
